@@ -932,8 +932,10 @@ li {
 }
 
 .hero-arrow {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border: 2px solid #ffffff;
   background: rgba(0, 0, 0, 0.65);
   border-radius: 50%;
@@ -1514,10 +1516,12 @@ li {
       color: var(--footer-text);
       text-transform: uppercase;
       font-weight: 700;
-      padding: 12px 10px;
+      padding: 12px 14px;
+      min-width: 44px;
       min-height: 44px;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
     }
 
     nav a:hover,
@@ -1568,6 +1572,17 @@ footer .footer-bottom > ul li a {
 
 footer .footer-bottom {
   background-color: #141414;
+}
+
+/* WCAG 2.5.5 AAA - garantizar 44x44 mínimo en nav del footer-bottom */
+footer .footer-bottom > div nav a {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 12px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 /* Responsive: ≤1200px */

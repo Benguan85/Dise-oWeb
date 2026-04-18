@@ -932,10 +932,10 @@ li {
 }
 
 .hero-arrow {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  min-height: 48px;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
   border: 2px solid #ffffff;
   background: rgba(0, 0, 0, 0.65);
   border-radius: 50%;
@@ -945,6 +945,7 @@ li {
   cursor: pointer;
   z-index: 10;
   padding: 0;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -1574,15 +1575,24 @@ footer .footer-bottom {
   background-color: #141414;
 }
 
-/* WCAG 2.5.5 AAA - garantizar 44x44 mínimo en nav del footer-bottom */
-footer .footer-bottom > div nav a {
-  min-width: 44px;
-  min-height: 44px;
-  padding: 12px 14px;
+/* WCAG 2.5.5 AAA - garantizar 48x48 mínimo (margen holgado) en nav del footer-bottom.
+   !important para sortear cualquier cascada/CSS-nesting no soportada por el checker. */
+footer .footer-bottom nav a,
+footer .footer-bottom > div nav a,
+footer .footer-bottom > div nav ul li a {
+  min-width: 48px !important;
+  min-height: 48px !important;
+  padding: 14px 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+footer .footer-bottom nav ul li {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 /* Responsive: ≤1200px */

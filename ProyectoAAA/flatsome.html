@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
   <header class="site-header">
     <!-- Top bar -->
     <div class="top-bar">
@@ -42,10 +43,10 @@
               </a>
             </li>
             <li class="top-bar-social">
-              <a href="#" aria-label="Facebook"><img src="./imagenes/4.png" alt=""></a>
-              <a href="#" aria-label="Twitter"><img src="./imagenes/5.png" alt=""></a>
-              <a href="#" aria-label="Instagram"><img src="./imagenes/6.png" alt=""></a>
-              <a href="#" aria-label="Email"><img src="./imagenes/1.png" alt=""></a>
+              <a href="#"><img src="./imagenes/4.png" alt=""><span class="visually-hidden">Facebook</span></a>
+              <a href="#"><img src="./imagenes/5.png" alt=""><span class="visually-hidden">Twitter</span></a>
+              <a href="#"><img src="./imagenes/6.png" alt=""><span class="visually-hidden">Instagram</span></a>
+              <a href="#"><img src="./imagenes/1.png" alt=""><span class="visually-hidden">Email</span></a>
             </li>
           </ul>
         </nav>
@@ -101,8 +102,9 @@
           <li><a href="#" lang="en">LOGIN</a></li>
           <li><a href="#" lang="en">CART / $0.00</a></li>
           <li class="user-cart">
-            <a href="#" aria-label="Carrito de compra">
-              <img src="./imagenes/10.png" alt="Carrito">
+            <a href="#">
+              <img src="./imagenes/10.png" alt="">
+              <span class="visually-hidden">Carrito de compra</span>
             </a>
           </li>
         </ul>
@@ -150,22 +152,28 @@
       <article>
         <a href="#" lang="en">
           <img src="./imagenes/12.png" alt="">
-          <h3>OUR BLOG</h3>
-          <p class="visually-hidden">Accede a nuestros últimos artículos y noticias de moda.</p>
+          <div class="card-overlay">
+            <h3>OUR BLOG</h3>
+            <p lang="es">Artículos y noticias de moda.</p>
+          </div>
         </a>
       </article>
       <article>
         <a href="#" lang="en">
           <img src="./imagenes/13.png" alt="">
-          <h3>JOIN OUR<br>COMPETITION</h3>
-          <p class="visually-hidden">Participa en nuestras promociones y concursos exclusivos.</p>
+          <div class="card-overlay">
+            <h3>JOIN OUR<br>COMPETITION</h3>
+            <p lang="es">Participa y gana premios exclusivos.</p>
+          </div>
         </a>
       </article>
       <article>
         <a href="#" lang="en">
           <img src="./imagenes/14.png" alt="">
-          <h3>ABOUT US</h3>
-          <p class="visually-hidden">Conoce nuestra historia y al equipo detrás de Flatsome.</p>
+          <div class="card-overlay">
+            <h3>ABOUT US</h3>
+            <p lang="es">Conoce nuestra historia y equipo.</p>
+          </div>
         </a>
       </article>
     </section>
@@ -173,6 +181,7 @@
     <!-- Weekly products -->
     <section class="products">
       <h2 lang="en">WEEKLY FEATURED PRODUCTS</h2>
+      <p class="products-intro">Descubre nuestra selección semanal de productos destacados.</p>
       <ul>
         <li>
           <article>
@@ -214,6 +223,7 @@
     <!-- Best selling -->
     <section class="products">
       <h2 lang="en">BEST SELLING PRODUCTS</h2>
+      <p class="products-intro">Los artículos más vendidos por nuestra comunidad.</p>
       <ul>
         <li>
           <article>
@@ -561,11 +571,11 @@
           <h2 lang="en">ABOUT US</h2>
           <p lang="la">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           <ul aria-label="Redes sociales">
-            <li><a href="#" aria-label="Síguenos en Facebook"><img src="./imagenes/39.png" alt=""></a></li>
-            <li><a href="#" aria-label="Síguenos en Twitter"><img src="./imagenes/40.png" alt=""></a></li>
-            <li><a href="#" aria-label="Escríbenos un correo"><img src="./imagenes/41.png" alt=""></a></li>
-            <li><a href="#" aria-label="Síguenos en Instagram"><img src="./imagenes/42.png" alt=""></a></li>
-            <li><a href="#" aria-label="Síguenos en Pinterest"><img src="./imagenes/43.png" alt=""></a></li>
+            <li><a href="#"><img src="./imagenes/39.png" alt=""><span class="visually-hidden">Síguenos en Facebook</span></a></li>
+            <li><a href="#"><img src="./imagenes/40.png" alt=""><span class="visually-hidden">Síguenos en Twitter</span></a></li>
+            <li><a href="#"><img src="./imagenes/41.png" alt=""><span class="visually-hidden">Escríbenos un correo</span></a></li>
+            <li><a href="#"><img src="./imagenes/42.png" alt=""><span class="visually-hidden">Síguenos en Instagram</span></a></li>
+            <li><a href="#"><img src="./imagenes/43.png" alt=""><span class="visually-hidden">Síguenos en Pinterest</span></a></li>
           </ul>
         </div>
 
@@ -606,6 +616,7 @@
                   <span>Jan</span>
                 </time>
                 <h3>A Video Blog Post</h3>
+                <p class="footer-news-excerpt" lang="es">Vídeo destacado del blog para completar la selección de novedades.</p>
               </article>
             </li>
           </ul>
@@ -676,11 +687,11 @@
       </div>
 
       <ul aria-label="Métodos de pago aceptados">
-        <li><a href="#" aria-label="Pago con Visa"><img src="./imagenes/44.png" alt=""></a></li>
-        <li><a href="#" aria-label="Pago con PayPal"><img src="./imagenes/45.png" alt=""></a></li>
-        <li><a href="#" aria-label="Pago con Stripe"><img src="./imagenes/46.png" alt=""></a></li>
-        <li><a href="#" aria-label="Pago con Mastercard"><img src="./imagenes/47.png" alt=""></a></li>
-        <li><a href="#" aria-label="Pago con Discover"><img src="./imagenes/48.png" alt=""></a></li>
+        <li><a href="#"><img src="./imagenes/44.png" alt=""><span class="visually-hidden">Pago con Visa</span></a></li>
+        <li><a href="#"><img src="./imagenes/45.png" alt=""><span class="visually-hidden">Pago con PayPal</span></a></li>
+        <li><a href="#"><img src="./imagenes/46.png" alt=""><span class="visually-hidden">Pago con Stripe</span></a></li>
+        <li><a href="#"><img src="./imagenes/47.png" alt=""><span class="visually-hidden">Pago con Mastercard</span></a></li>
+        <li><a href="#"><img src="./imagenes/48.png" alt=""><span class="visually-hidden">Pago con Discover</span></a></li>
       </ul>
     </section>
   </footer>
